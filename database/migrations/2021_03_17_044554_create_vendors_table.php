@@ -31,7 +31,7 @@ class CreateVendorsTable extends Migration
             $table->string('natureofbusiness');
             $table->timestamps();
             $table->softDeletes();
-         
+
         });
     }
 

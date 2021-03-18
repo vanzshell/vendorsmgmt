@@ -13,13 +13,13 @@ class VendorsController extends Controller
      */
     public function index()
     {
-       
+
         return response()->json(Vendor::all());
 
     }
 
-    
-   
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -56,13 +56,15 @@ class VendorsController extends Controller
             'owner' => 'owner data',
             'email address' => 'email data',
             'formsofbusiness' => 'forms of business data',
-            'natureofbusiness' => 'nature of business data'
+            'natureofbusiness' => 'nature of business data',
+            'createdby' => 'admin',
+            'updatedby' => 'admin2'
                                                 ]);
         return response()->json($new_vendor);
     }
 
 
-    
+
     /**s
      * Display the specified resource.
      *
@@ -114,8 +116,10 @@ class VendorsController extends Controller
             'owner' => 'owner data updated',
             'email address' => 'email data updated',
             'formsofbusiness' => 'forms of business data updated',
-            'natureofbusiness' => 'nature of business data updated'
-            
+            'natureofbusiness' => 'nature of business data updated',
+            'createdby' => 'admin2',
+            'updatedby' => 'admin3'
+
             ]);
         return response()->json($new_vendor);
     }
